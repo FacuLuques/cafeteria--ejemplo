@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+hr {
+    size: 1px;
+    color: white;
+    margin: 20px 300px;
+}
+
+/* BODY */
+
+body {
+    background-image: url(../img/interior-shot-of-cafe-with-chairs-near-the-bar-with-wooden-tables.jpg);
+    background-size: cover;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-attachment: fixed;
+}
+
+.contenedorGeneral {
+    background-color: rgba(0, 0, 0, 0.753);
+    margin: 7% 5%;
+}
+
+
+/* HEADER */
+
+header {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin: 0 10px;
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(228, 80, 27);
+}
+
+ul li a:hover {
+    background-color: rgb(66, 66, 66);
+    border-radius: 10px;
+    padding: 2px;
+    transition: 200ms;
+}
+
+h1 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+/* HOME */
+
+.servicio {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.servicio h2 {
+    color: white;
+    text-decoration: underline;
+}
+
+.servicio p {
+    width: 50%;
+    text-align: justify;
+    color: white;
+    width: 50em;
+}
+
+.servicio img {
+    width: 40%;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* MENU */
+
+.carta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta h2 {
+    color: white;
+    text-decoration: underline;
+    margin: 20px 0;
+}
+
+.carta img {
+    width: 90%;
+}
+
+
+/* UBICACION */
+
+.maps {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0;
+}
+
+.maps h3 {
+    color: white;
+    text-decoration: underline;
+    
+}
+
+.maps p {
+    width: 50em;
+    text-align: justify;
+    color: white;
+}
+
+.maps iframe {
+    margin-bottom: 50px;
+    border-radius: 10px;
+    width: 50%;
+}
+
+
+/* CONTACTO */
+
+.contacto {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin-bottom: 50px;
+}
+
+.contacto h3 {
+    color: white;
+    text-decoration: underline;
+}
+
+.campo {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.tamBotonForm {
+    width: 200px;
+    margin: auto;
+}
+
+
+@media (max-width:830px) {
+    .servicio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .servicio img {
+        width: 80%;
+    }
+
+    .maps {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .maps iframe {
+        width: 80%;
+    }
+
+}
+
+@media (max-width:500px) {
+    ul {
+        display: none;
+    }
+}
